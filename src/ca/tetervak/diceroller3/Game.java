@@ -7,16 +7,16 @@ public class Game {
 
     public static int NUM_OF_DICE = 3;
 
-    private final List<Die> dice;
+    private final Die[] dice;
 
     public Game() {
-        dice = new ArrayList<>(NUM_OF_DICE);
+        dice = new Die[NUM_OF_DICE];
         for(int i = 0; i < NUM_OF_DICE; i++){
-            dice.add(new Die());
+            dice[i] = new Die();
         }
     }
 
-    public List<Die> getDice() {
+    public Die[] getDice() {
         return dice;
     }
 
