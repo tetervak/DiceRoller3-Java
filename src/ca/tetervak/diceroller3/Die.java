@@ -50,6 +50,6 @@ public class Die {
 
     @Override
     public String toString(){
-        return "Die{ isRolled = " + isRolled + ", " + "value = " + value + "}";
+        return String.format("Die{ isRolled = %b, value = %d }", isRolled, value);
     }
 }
